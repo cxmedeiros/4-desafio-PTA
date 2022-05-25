@@ -16,4 +16,4 @@ routes.get('/restaurante', restauranteController.get);
 routes.delete('/restaurante/:id', restauranteController.delete);
 routes.put('/restaurante/:id', restauranteController.update);
 
-export default routes ;
+export default routes;
