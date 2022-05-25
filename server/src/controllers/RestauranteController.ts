@@ -33,7 +33,7 @@ export default class RestauranteController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {name, adress, kindOfFood } = request.body;
+        const {name, adress, kindOfFood} = request.body;
 
         const isAnyUndefined = Citi.areValuesUndefined(name, adress, kindOfFood, id);
         if(isAnyUndefined) return response.status(400).send();
